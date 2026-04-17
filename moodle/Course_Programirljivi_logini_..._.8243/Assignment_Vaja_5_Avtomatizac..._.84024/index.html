@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Učilnica FS - 2025/2026 - Programirljivi logični krmilniki  (VS-PAP-2)</title>
+    <link rel="stylesheet" type="text/css" href="..//shared/moodle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class="d-flex flex-column h-100">
+        <nav class="navbar navbar-light bg-white border-bottom">
+            <a class="navbar-brand" href="https://e-ucilnica.fs.uni-lj.si" title="E-Učilnica FS - 2025/2026">
+                E-Učilnica FS - 2025/2026
+            </a>
+        </nav>
+        <main class="container-fluid mt-2 flex-grow-1 flex-shrink-1">
+            <div>
+                <h1><a href="../index.html">Programirljivi logični krmilniki  (VS-PAP-2)</a></h1>
+                <p>PLKP</p>
+                    <h2>
+        Vaja 5: Avtomatizacija parkirne zapornice
+    </h2>
+
+    <div class="alert alert-info alert-block">
+        This page is part of the content downloaded from <a href="https://e-ucilnica.fs.uni-lj.si/mod/assign/view.php?id=22184">Vaja 5: Avtomatizacija parkirne zapornice</a> on Monday, 23 February 2026, 2:12 PM. Note that some content and any files larger than 100 MB are not downloaded.    </div>
+
+    <h3>Description</h3>
+    <div>
+        <span style="font-size:1.17188rem;font-weight:700;">1. Opis</span><br />
+<p>V okviru laboratorijske vaje je potrebno razviti sekvenčno vezje za vodenje <a href="https://lampa-fs.gitbook.io/wiki/laboratorijska-oprema/makete/parkirna-zapornica" title="https://lampa-fs.gitbook.io/wiki/laboratorijska-oprema/makete/parkirna-zapornica">makete parkirne zapornice</a>. Uporabljeli bomo PLK Simatic s1200 podjetja Siemens.<br /></p>
+<p>Želeno delovanje zapornice:</p>
+<p></p>
+<ol>
+    <li>Ob prihod avtomobila, ki aktivira <span><strong>magnetno stikalo</strong></span> se zapornice prične dvigovati</li>
+    <li>ko zapornica doseže končno stikalo (zapornica odprta) se dvigovanje preneha</li>
+    <li>avtomobil zapelje čez svetlobni senzor </li>
+    <li>ko avtomobil zapusti svetlobni senzor se prične zapornica spuščati</li>
+    <li>ko zapornica doseže končno stikalo (zapornica zaprta) se spuščanje preneha</li>
+    <li>zapornica čaka na ponoven prihod avta na magnetno stikalo</li>
+</ol>
+<p></p>
+<h5>2. Zahteve</h5>
+<p></p>
+<ul>
+    <li><strong>Ocena 6:</strong><br />
+        <ul>
+            <li>Električno povežite vsa 4 stikala makete na PLK po elektro načrtu</li>
+            <li>Preko PLK monitoringa preverite delovanje vseh 4 stikal</li>
+        </ul><br />
+    </li>
+    <li><strong>Ocena 7:</strong>
+        <ul>
+            <li>Električno povežite elektromotor zapornice v H mostič (<a href="https://lampa-fs.gitbook.io/wiki/laboratorijska-oprema/makete/parkirna-zapornica#motor-s-prenosom" title="https://lampa-fs.gitbook.io/wiki/laboratorijska-oprema/makete/parkirna-zapornica#motor-s-prenosom">Povezava motorja v H mostič</a>)<br /></li>
+            <li>Napišite program, ki:<ul>
+                    <li>ob pritisku tipke I2 (magnetno stikalo) požene motor v smeri dvigovanja zapornice</li>
+                    <li>ob pritisku tipke I3 (končno stikalo zapornica odprta) pa motor izključi</li>
+                </ul>
+            </li>
+        </ul><br />
+    </li>
+    <li><strong>Ocena 8:</strong>
+        <ul>
+            <li>Napišite program, ki:<ul>
+                    <li>ob pritisku tipke I1 (svetlobni senzor) motor požene v smeri spuščanja zapornice</li>
+                    <li>ob pritisku tipke I4 (končno stikalo zapornica zaprta pa motor izključi<br /></li>
+                </ul>
+            </li>
+        </ul><br />
+    </li>
+    <li><strong>Ocena 9:</strong><br />
+        <ul>
+            <li>Napišite program, ki:<ul>
+                    <li>združuje nalogo za oceno 7 in 8 v enoten program</li>
+                </ul>
+            </li>
+        </ul><br />
+    </li>
+    <li><strong>Ocena 10:</strong>
+        <ul>
+            <li>Napišite program, ki:<ul>
+                    <li>upravlja zapornico glede na zahteve njenega delovanja (zapornica mora delovati tako kotje bilo zamišljeno)</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h5>Potek vaje</h5>
+<p></p>
+<ul>
+    <li>Načrtovanje električne sheme sistema<ul>
+            <li>povezave med električnimi komponentami</li>
+        </ul>
+    </li>
+    <li>Električna vezava sistema po vezalni shemi</li>
+    <li>Testiranje povezav sheme (električno in programsko)</li>
+</ul>
+
+<h5>Seznam materiala in opreme</h5>
+<p></p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Komponenta</th>
+            <th>Koda</th>
+            <th>Proizvajalec</th>
+            <th>Podatkovni list</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PLK Siemens SIMATIC S-1200</td><td>CPU 1215C DC/DC/RLY <br />215-1HG40-0XB0</td>
+            <td>Siemens</td>
+            <td><a href="intro/PLK-S1200-UM.pdf" target="_blank" title="datoteka" rel="noreferrer noopener">datoteka</a></td>
+        </tr>
+        <tr>
+            <td><br /></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table><br />
+<h5>Gradiva</h5>
+<ul>
+    <li><a href="https://e-ucilnica.fs.uni-lj.si/mod/page/view.php?id=28021">Opis makete</a></li>
+    <li><a href="intro/ElektroMAketaZapornicaLOGO.pdf">Elektro načrt povezave makete z PLK</a></li>
+    <li><a href="intro/STEP7-Basic-Tut.pdf">Uporaba razvojenga okolja TIA portal za PLK</a></li>
+    <li><a href="https://wiki.fs-lampa.si/#/gradiva/makete/tekociTrak/trak?id=primeri-priklju%C4%8Ditve-gradnikov">Povezava motorja v H mostič</a></li><li><div class="mediaplugin mediaplugin_videojs d-block"><div style="max-width:400px;"><video data-setup-lazy="{&quot;techOrder&quot;: [&quot;youtube&quot;], &quot;sources&quot;: [{&quot;type&quot;: &quot;video/youtube&quot;, &quot;src&quot;:&quot;https://www.youtube.com/watch?v=3QXARXl6_LM&amp;amp;list=PLRtRKudOMmtFa9pcLrveRG5Cw4ZsvnYSo&quot;}], &quot;language&quot;: &quot;en&quot;, &quot;fluid&quot;: true, &quot;playbackRates&quot;: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2], &quot;userActions&quot;: {&quot;hotkeys&quot;: true}}" id="id_videojs_699c523d3ca6a_1" class="video-js" preload="auto" controls="true" title="Video tutorial"><a class="mediafallbacklink" href="https://www.youtube.com/watch?v=3QXARXl6_LM&amp;list=PLRtRKudOMmtFa9pcLrveRG5Cw4ZsvnYSo">Video tutorial</a></video></div></div></li><li><a href="https://cache.industry.siemens.com/dl/files/622/91696622/att_42769/v1/s71200_system_manual_en-US_en-US.pdf">Uporabniški dokument PLK</a></li><li><a href="https://lampa-fs.gitbook.io/wiki/laboratorijska-oprema/plk/simatic-1200">Navodila za uporaba SIMATIC S-1200</a></li><li>Priključitev digitalnih vhodov in izhodov</li>
+</ul><p><img src="intro/image.png" alt="" class="img-fluid" /><br /></p>
+<h5>Poročilo:</h5>
+<p>Na koncu vaje samo en predstavnik ekipe odda skupno poročilo. Poročilo naj vsebuje sliko vezja s katerim ste dosegli najvišji cilj.</p><br />
+    </div>
+    <hr>
+
+
+            </div>
+        </main>
+        <footer id="page-footer" class="py-3">
+            <div class="container">
+                <div>This file is part of the content downloaded from <a href="https://e-ucilnica.fs.uni-lj.si/course/view.php?id=182">Programirljivi logični krmilniki  (VS-PAP-2)</a> by Marko Corn on Monday, 23 February 2026, 2:12 PM.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

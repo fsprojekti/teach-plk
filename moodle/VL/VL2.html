@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Učilnica FS - 2025/2026 - Programirljivi logični krmilniki (VS-PAP-2) - VL2</title>
+    <link rel="stylesheet" type="text/css" href="../shared/moodle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div style="min-height:100vh;display:flex;flex-direction:column;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <nav class="navbar navbar-light bg-white border-bottom">
+            <a class="navbar-brand" href="https://e-ucilnica.fs.uni-lj.si" title="E-Učilnica FS - 2025/2026">
+                E-Učilnica FS - 2025/2026
+            </a>
+        </nav>
+
+        <main style="margin-top:16px;margin-bottom:24px;padding:0 16px;flex-grow:1;flex-shrink:1;">
+            <div style="padding-top:8px;padding-bottom:8px;line-height:1.6;max-width:1200px;">
+                <h1><a href="../Course_Programirljivi_logini_..._.8243/index.html">Programirljivi logični krmilniki (VS-PAP-2)</a></h1>
+                <p>PLKP</p>
+
+                <h3>Vaja 2: Realizacija sekvenčnih vezij s stikali in releji</h3>
+
+                <div>
+                    <div style="margin-bottom:20px;">
+                        <strong>1. Cilji vaje</strong><br />
+                        <ul>
+                            <li>Načrtovanje in izdelava uporabne aplikacije z električno vezavo (wiring) in digitalno logiko.</li>
+                            <li>Uporaba sekvenčnih vezij za zanesljivo krmiljenje enosmernega motorja v praktičnem scenariju.</li>
+                            <li>Vključitev časovnega releja in časovne logike za izboljšanje funkcionalnosti sistema.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong>2. Opis vaje</strong><br />
+                        <p>V okviru laboratorijske vaje zgradite sistem z uporabo električnih komponent za realizacijo sekvenčnih vezij. Uporabljate tipke, kontakte, terminale, žice, sponke, svetila, releje, časovni rele in enosmerni motor. Vajo izvedete od osnovnega vklopa motorja do dvosmernega krmiljenja motorja z A in B, pri čemer v višjih ocenah vključite časovne funkcije.</p>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong>3. Povzetek nalog in pričakovanih rezultatov</strong><br />
+                        <p>Za doseganje višje ocene je treba izvesti tudi vse predhodne naloge.</p>
+
+                        <table style="border-collapse:collapse;margin-bottom:8px;">
+                            <tbody>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;background-color:#67ceec;"><strong>Ocena</strong></td>
+                                    <td style="border:1px solid #000000;padding:10px;background-color:#67ceec;"><strong>Kratek opis nalog</strong></td>
+                                    <td style="border:1px solid #000000;padding:10px;background-color:#67ceec;"><strong>Pričakovani rezultati</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;text-align:center;">6</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Zagon motorja z eno tipko in samozadrževalno funkcijo.</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Motor se ob pritisku tipke zažene in ostane v delovanju tudi po spustu tipke.</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;text-align:center;">7</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Dve tipki: A za zagon, B za zaustavitev.</td>
+                                    <td style="border:1px solid #000000;padding:10px;">A zažene motor, B ga ustavi.</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;text-align:center;">8</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Sprememba smeri z A in B po principu stop + ponovni zagon.</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Če motor teče v smeri A: prvi pritisk B ustavi, drugi pritisk B zažene smer B; enako simetrično velja za prehod iz smeri B na smer A.</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;text-align:center;">9</td>
+                                    <td style="border:1px solid #000000;padding:10px;">OFF-delay za enosmerno vrtenje motorja.</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Motor deluje v eni smeri; po ukazu zaustavitve teče še nastavljeni čas in se nato izključi (off-delay).</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #000000;padding:10px;text-align:center;">10</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Pulzirajoči rele: A zagon, B stop.</td>
+                                    <td style="border:1px solid #000000;padding:10px;">Po pritisku A začne rele pulzirati in krmili motor po pulznem režimu; po pritisku B se pulziranje in motor ustavita.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong><br />4. Podrobnejši opis nalog</strong><br />
+                        <div>
+                            <strong>4.1 Ocena 6</strong>
+                            <div>
+                                <ul>
+                                    <li>Električno zvežite sistem z eno tipko za zagon motorja.</li>
+                                    <li>Vezje izvedite samozadrževalno, da motor ostane vklopljen po spustu tipke.</li>
+                                </ul>
+                            </div>
+
+                            <strong>4.2 Ocena 7</strong>
+                            <div>
+                                <ul>
+                                    <li>Dodajte dve tipki: A (START) in B (STOP).</li>
+                                    <li>Tipka A zažene motor, tipka B ga ustavi.</li>
+                                </ul>
+                            </div>
+
+                            <strong>4.3 Ocena 8</strong>
+                            <div>
+                                <ul>
+                                    <li>Izvedite dvosmerno krmiljenje motorja s tipkama A in B.</li>
+                                    <li>Če motor teče v smeri A: prvi pritisk tipke B motor ustavi, drugi pritisk tipke B motor zažene v smeri B.</li>
+                                    <li>Enako kontradiktorno pravilo velja tudi ob prehodu iz smeri B na smer A.</li>
+                                </ul>
+                            </div>
+
+                            <strong>4.4 Ocena 9</strong>
+                            <div>
+                                <ul>
+                                    <li>Vzemite enosmerno krmiljenje motorja in dodajte časovni rele (GIC Micon 175) v načinu OFF-delay.</li>
+                                    <li>Po ukazu stop mora motor delovati še nastavljeni čas in se nato samodejno ustaviti.</li>
+                                    <li>Nastavite in demonstrirajte vsaj eno konkretno časovno vrednost zakasnitve.</li>
+                                </ul>
+                            </div>
+
+                            <strong>4.5 Ocena 10</strong>
+                            <div>
+                                <ul>
+                                    <li>Uporabite časovni rele (GIC Micon 175) v pulzirajočem režimu.</li>
+                                    <li>Tipka A zažene pulziranje releja in delovanje motorja.</li>
+                                    <li>Tipka B ustavi pulziranje in ustavi motor.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong><br />5. Priprava na vajo in potrebno predznanje</strong><br />
+                        <ul>
+                            <li>Osnove relejskih vezij in kontaktne logike.</li>
+                            <li>Razumevanje samozadrževalnih (latch) vezij.</li>
+                            <li>Varno delo pri električni vezavi in testiranju delovanja.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong>6. Seznam potrebne opreme</strong><br />
+                        <table style="width:100%; border-collapse:collapse; font-size:0.9rem; margin:8px 0 14px 0;">
+                            <thead>
+                                <tr>
+                                    <th style="background:#e9ecef;border:1px solid #d0d7de;padding:8px;text-align:left;">Komponenta</th>
+                                    <th style="background:#e9ecef;border:1px solid #d0d7de;padding:8px;text-align:left;">Koda</th>
+                                    <th style="background:#e9ecef;border:1px solid #d0d7de;padding:8px;text-align:left;">Proizvajalec</th>
+                                    <th style="background:#e9ecef;border:1px solid #d0d7de;padding:8px;text-align:left;">Podatkovni list</th>
+                                    <th style="background:#e9ecef;border:1px solid #d0d7de;padding:8px;text-align:left;">Slika</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Tipka</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">YW1B-M1E10W</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">IDEC</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/IDEC-tipka.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image%20%283%29.png" alt="tipka" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Kontakt</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">YW-E10</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">IDEC</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/IDEC-kontakti.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image.png" alt="kontakt" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Svetilo</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">19211353</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">CML Innovative Technologies</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/svetilo-led.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image%20%282%29.png" alt="svetilo" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Sponke</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">/</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Wago</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/WAGO_222-413en_GG.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image%20%281%29.png" alt="sponke" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Rele</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">RT424024</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Shrack</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/rele-shrack.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image%20%284%29.png" alt="rele" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Rele podnožje</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">RT78726</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Shrack</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/rele-podnozje-shrack.pdf" target="_blank" rel="noreferrer noopener">datoteka</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><img src="../Course_Programirljivi_logini_..._.8243/Assignment_Vaja_2_Realizacija..._.134390/intro/image%20%285%29.png" alt="rele podnozje" style="max-width:90px; height:auto;" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Časovni rele</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">Micon 175</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">GIC</td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;"><a href="https://www.icc-gb.com/gic-series-micon-175-10-function-multi-range-spco-12-to-240-vac-dc-5060hz-01s-100h-175mm-1cmdt0" target="_blank" rel="noreferrer noopener">povezava</a></td>
+                                    <td style="border:1px solid #d0d7de;padding:6px;">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="margin-bottom:20px;">
+                        <strong>7. Pogoste pasti</strong><br />
+                        <ul>
+                            <li>Napačno ožičenje kontaktov releja (NO/NC) povzroči nepravilno delovanje sekvence.</li>
+                            <li>Nepravilno izvedena samozadrževalna veja povzroči izpad delovanja po spustu tipke.</li>
+                            <li>Napačna nastavitev časovnega releja lahko povzroči neustrezen preklop ali zakasnitev.</li>
+                            <li>Pri dvosmernem krmiljenju pazite na logiko preklopa in varno ustavitev motorja.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom:12px;">
+                        <strong>8. Dodatna gradiva</strong><br />
+                        <ul>
+                            <li>Podatkovni listi komponent v mapi <em>intro</em> za Vajo 2.</li>
+                            <li>Zapisi predavanj o relejskih sekvenčnih vezjih in samozadrževalnih vezavah.</li>
+                            <li>Skice stikalnih načrtov za enosmerno in dvosmerno krmiljenje motorja.</li>
+                            <li>Časovni rele GIC Micon 175: <a href="https://www.icc-gb.com/gic-series-micon-175-10-function-multi-range-spco-12-to-240-vac-dc-5060hz-01s-100h-175mm-1cmdt0" target="_blank" rel="noreferrer noopener">tehnični opis</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
