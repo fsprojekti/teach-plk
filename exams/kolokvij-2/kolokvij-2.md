@@ -21,7 +21,7 @@ Za logično vezje na sliki zapišite:
 
 Za logično vezje na sliki narišite diagram prehajanja stanj *(25 točk)*
 
-<img src="naloga2.png" alt="Sekvenčno vezje — Naloga 2" width="70%">
+<img src="naloga2.png" alt="Sekvenčno vezje — Naloga 2" width="40%">
 
 ---
 
@@ -41,4 +41,4 @@ Vodni rezervoar se polni preko ventila **V1**. Rezervoar polnimo do zgornjega ni
 > Ventili V1, V2, V3 (0/1 … zaprt/odprt),  
 > merilnika nivoja X0, X1 (0/1 … pod nivojem/nad nivojem)
 
-<img src="naloga4.png" alt="Shema rezervoarja z ventili V1, V2, V3 in merilnikoma X0, X1" width="80%">
+<img src="naloga4.png" alt="Shema rezervoarja z ventili V1, V2, V3 in merilnikoma X0, X1" width="40%">
