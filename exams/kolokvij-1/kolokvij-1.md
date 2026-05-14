@@ -1,6 +1,5 @@
 # Kolokvij — Programirljivi logični krmilniki
 
-
 ---
 
 ## Naloga 1 — Normalne oblike logične funkcije (25 točk)
@@ -42,9 +41,7 @@ Dan je lestvični diagram sekvenčnega vezja:
 
 3. Diagram prehajanja  stanj *(10 točk)*
 
-<img src="images/Screenshot_10.png" alt="Naloga 3 - lestvicni diagram" width="30%">
-
-
+<img src="images/Screenshot_10.png" alt="Naloga 3 - lestvicni diagram" width="80%">
 
 
 ---
