@@ -13,7 +13,7 @@ Za logično vezje na sliki zapišite:
 3. Diagram prehajanja stanj *(10 točk)*
 
 
-<img src="naloga1.png" alt="Logično vezje — Naloga 1" width="70%">
+<img src="naloga1.png" alt="Logično vezje — Naloga 1" width="40%">
 
 ---
 
